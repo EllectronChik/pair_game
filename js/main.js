@@ -12,7 +12,7 @@ addEventListener('DOMContentLoaded', () => {
                 cell.classList.add('hero__cell');
                 cell.classList.add(`hero__cell__${cnt}`);
                 cell.classList.add(`hero__cell__${cnt}__${i}__${j}`);
-                cell.style.backgroundImage = `url(/images/back.svg)`;
+                cell.style.backgroundImage = `url(images/back.svg)`;
                 if (cnt < 5) {
                     cell.style.width = `${window.screen.width /  (parseInt(cnt) + 5)}px`;
                     cell.style.height = `${window.screen.width /  (parseInt(cnt) + 5)}px`;
