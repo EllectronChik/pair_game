@@ -56,7 +56,7 @@ addEventListener('DOMContentLoaded', () => {
               
             let cells = document.querySelectorAll('.hero__cell');
             generate_pairs(cells, pairs);
-            console.log(pairs);
+            // console.log(pairs);
             timer_cntr(timer);
             player_choice(choice, pairs);
         })
@@ -79,7 +79,7 @@ addEventListener('DOMContentLoaded', () => {
 
             let pair_1 = `hero__cell__${cnt}__${m_1}__${n_1}`;
             document.querySelector(`.${pair_1}`).classList.add(`not_image_${i / 2}`);
-            console.log(`not_image_${i / 2}`);
+            // console.log(`not_image_${i / 2}`);
             let m_2 = Math.floor(parseInt(cards[i+1]) / cnt);
             let n_2 = parseInt(cards[i+1]) % cnt;
             let pair_2 = `hero__cell__${cnt}__${m_2}__${n_2}`;
@@ -123,7 +123,7 @@ addEventListener('DOMContentLoaded', () => {
                             if (cell.classList.contains(`not_image_${i}`)) {
                                 cell.classList.remove(`not_image_${i}`);
                                 cell.classList.add(`image_${i}`);
-                                console.log(`image_${i}`);
+                                // console.log(`image_${i}`);
                                 break;
                             }
                         }
@@ -136,7 +136,7 @@ addEventListener('DOMContentLoaded', () => {
                             for(let pair of pairs) {
                                 // console.log(pair, choice[0], choice[1], pair.includes(choice[0]) && pair.includes(choice[1]));
                                 if (pair.includes(choice[0]) && pair.includes(choice[1])) {
-                                    console.log('a_pair');
+                                    // console.log('a_pair');
                                     pairs.splice(pairs.indexOf(pair), 1);
                                     document.querySelector(`.${choice[0]}`).classList.add('deleted');
                                     document.querySelector(`.${choice[1]}`).classList.add('deleted');
@@ -170,7 +170,7 @@ addEventListener('DOMContentLoaded', () => {
     }
 
     function gameEnd() {
-        console.log('end');
+        // console.log('end');
         let hero = document.querySelector('.hero__container');
         hero.innerHTML = '';
         let final_block = document.createElement('div');
