@@ -186,11 +186,6 @@ addEventListener('DOMContentLoaded', () => {
         hero.append(final_block);
         final_block.append(alert);
         gameStarted = false;
-        document.getElementById('settings__count').textContent = cnt * cnt;
-        while (field.firstChild) {
-            field.firstChild.remove();
-        }
-        createField();
           
     }
 
