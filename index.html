@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#"  class="header__logo"><img src="/images/logo_t1.svg" alt="logo"></a>
+            <h1 class="header__title">Найди пару</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-settings">
+            <form id="settings__form" class="container settings__container">
+                <div class="settings__block_1">
+                    <p class="settings__text">Выберите количество пар:</p>
+                    <div class="settings__row">
+                        <p id="settings__count" class="settings__text">16</p>
+                        <input type="range" min="2" max="4" value="4" step="2" class="settings__range" id="settings__range">
+                    </div>
+                </div>
+
+                <div class="settings__block_2">
+                    <p class="settings__text">Выберите время игры:</p>
+                    <div class="settings__row">
+                        <p id="settings__timer" class="settings__text">40</p>
+                        <p class="settings__text"> sec</p>
+                        <input type="range" min="10" max="120" value="40" step="5" class="settings__range" id="settings__time">
+                    </div>
+                </div>
+
+                <button type="submit" class="settings__button">Старт</button>
+            </form>
+        </section>
+
+        <section class="section-hero">
+            <div class="container hero__container">
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>
