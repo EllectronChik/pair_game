@@ -1,6 +1,19 @@
 addEventListener('DOMContentLoaded', () => {
     let gameStarted = false;
     let victory = false;
+
+    function exitFullscreen() {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      }
+
     function createField() {    
         for (let i = 0; i < cnt; i++) {
             let row = document.createElement('div');
@@ -186,7 +199,7 @@ addEventListener('DOMContentLoaded', () => {
         hero.append(final_block);
         final_block.append(alert);
         gameStarted = false;
-          
+        exitFullscreen();
     }
 
 
